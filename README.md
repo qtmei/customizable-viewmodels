@@ -1,4 +1,4 @@
-#CS:GO Custom ViewModels
+# CS:GO Custom ViewModels
 addon for Garry's Mod, allows you to import custom viewmodel settings from CS:GO directly to Garry's Mod using the same ConVars<br/><br/>
 
 ConVars:<br/>
