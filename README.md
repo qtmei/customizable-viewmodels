@@ -1,4 +1,4 @@
-# CS Custom ViewModels
+# Customizable ViewModels
 allows you to import your ViewModel settings from CS to Garry's Mod using the same ConVars<br/><br/>
 ConVars:<br/>
 cl_righthand 0 / 1 (default: 1)<br/>
