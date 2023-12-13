@@ -3,7 +3,7 @@ CreateClientConVar("viewmodel_offset_x", 0)
 CreateClientConVar("viewmodel_offset_y", 0)
 CreateClientConVar("viewmodel_offset_z", 0)
 
-hook.Add("Think", "CS_Custom_ViewModels_Think", function()
+hook.Add("Think", "Customizable_ViewModels_Think", function()
 	local wep = LocalPlayer():GetActiveWeapon()
 
 	if !IsValid(wep) then return end
@@ -19,7 +19,7 @@ hook.Add("Think", "CS_Custom_ViewModels_Think", function()
 	end
 end)
 
-hook.Add("CalcViewModelView", "CS_Custom_ViewModels_CalcViewModelView", function(wep, vm, oldPos, oldAng, pos, ang)
+hook.Add("CalcViewModelView", "Customizable_ViewModels_CalcViewModelView", function(wep, vm, oldPos, oldAng, pos, ang)
 	local offset = Vector(GetConVar("viewmodel_offset_x"):GetFloat(), GetConVar("viewmodel_offset_y"):GetFloat(), GetConVar("viewmodel_offset_z"):GetFloat())
 
 	offset:Rotate(ang)
