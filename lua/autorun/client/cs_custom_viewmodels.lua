@@ -4,8 +4,7 @@ CreateClientConVar("viewmodel_offset_y", 0)
 CreateClientConVar("viewmodel_offset_z", 0)
 
 hook.Add("Think", "CS_Custom_ViewModels_Think", function()
-	local localplayer = LocalPlayer()
-	local wep = localplayer:GetActiveWeapon()
+	local wep = LocalPlayer():GetActiveWeapon()
 
 	if !IsValid(wep) then return end
 
